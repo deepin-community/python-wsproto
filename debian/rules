@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
 
+export PYBUILD_NAME=wsproto
 %:
-	dh $@
+	dh $@ --with sphinxdoc --buildsystem=pybuild
+
+override_dh_sphinxdoc:
+ifeq (,$(findstring nodoc, $(DEB_BUILD_OPTIONS)))
+	PYTHONPATH=. python3 -m sphinx -b html -N docs/source $(CURDIR)/debian/python-wsproto-doc/usr/share/doc/python-wsproto-doc/html
+	dh_sphinxdoc
+endif
