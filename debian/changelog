@@ -1,5 +1,97 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-wsproto (1.2.0-1) unstable; urgency=low
 
-  * Initial release
+  * New upstream release.
+  * Install testfiles using d/pybuild.testfiles.
+  * Enable upstream testsuite for autopkgtests.
+  * Update d/copyright with new years.
+  * Use uscan version 4.
+  * Bump Standards-Version to 4.6.1.0.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Michael Fladischer <fladi@debian.org>  Sat, 07 Jan 2023 16:11:22 +0000
+
+python-wsproto (1.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    - Fixes test failure with new h11 (Closes: #1005527)
+  * Add more upstream metadata fields
+
+ -- Paul Wise <pabs@debian.org>  Sun, 27 Feb 2022 20:59:25 +0800
+
+python-wsproto (1.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  + Bump debhelper compat to v13.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.6.0, no changes needed.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 17 Sep 2021 03:14:40 -0400
+
+python-wsproto (0.15.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Source-only upload to allow testing migration.
+  * debian/control: Mark package python-swproto-doc as
+    M-A: foreign.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 12 Jan 2020 17:00:48 -0500
+
+python-wsproto (0.15.0-2) unstable; urgency=low
+
+  * Build and ship documentation in python-wsproto-doc package.
+
+ -- Michael Fladischer <fladi@debian.org>  Fri, 27 Dec 2019 21:45:38 +0100
+
+python-wsproto (0.15.0-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #946871).
+  * New maintainer (Closes: #947025).
+  * Set Vcs-* to DPMT repo on salsa.debian.org.
+  * Bump debhelper compatibility and version to 12 and switch to
+    debhelper-compat.
+  * Bump Standards-Version to 4.4.1.
+  * Set Rules-Requires-Root: no.
+  * Run wrap-and-sort -bast to reduce diff size of future changes.
+  * Add python3-h11 and python3-pytest to Build-Depends as required by
+    tests.
+  * Rename Expat as name for license.
+  * Clean up files to allow two builds in a row.
+  * Add myself to d/copyright.
+  * Enable autopkgtest-pkg-python testsuite.
+  * Clean up trailing newline in d/rules.
+  * Clean up d/copyright, wsproto/utf8validator.py is no longer present.
+  * Install README.rst in python3-wsproto binary package.
+
+ -- Michael Fladischer <fladi@debian.org>  Fri, 27 Dec 2019 20:47:08 +0100
+
+python-wsproto (0.11.0-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/watch: Use https protocol
+
+  [ Sébastien Delafond ]
+  * Set maintainer to Debian QA Group
+
+ -- Sebastien Delafond <seb@debian.org>  Thu, 19 Dec 2019 17:22:57 +0100
+
+python-wsproto (0.11.0-2) unstable; urgency=medium
+
+  * Update copyright for wsproto/utf8validator.py (Closes: #894450)
+
+ -- Sebastien Delafond <seb@debian.org>  Fri, 30 Mar 2018 16:32:14 +0200
+
+python-wsproto (0.11.0-1) unstable; urgency=low
+
+  * First upload (Closes: #894435)
+
+ -- Sebastien Delafond <seb@debian.org>  Fri, 30 Mar 2018 11:29:18 +0200

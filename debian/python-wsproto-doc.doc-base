@@ -1,0 +1,8 @@
+Document: python-wsproto-doc
+Title: WebSockets state-machine based protocol implementation
+Author: Benno Rice <benno@jeamland.net>
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-wsproto-doc/html/index.html
+Files: /usr/share/doc/python-wsproto-doc/html/*.html
